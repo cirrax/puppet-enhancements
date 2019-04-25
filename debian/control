@@ -1,0 +1,37 @@
+Source: puppet-enhancements
+Section: misc
+Priority: extra
+Maintainer: Benedikt Trefzer <benedikt.trefzer@cirrax.com>
+Build-Depends: debhelper (>= 9),
+               ruby,
+Standards-Version: 3.9.8
+
+Package: puppet-enhance-links
+Architecture: any
+Depends:  ${misc:Depends},
+          puppet-agent,
+Description: create several links to use puppetlabs puppet-agent
+ create links to use the virtual environment installed
+ by puppetlabs puppet-agent.
+ links created are puppet and eyaml
+
+Package: puppet-enhance-miniportile2
+Architecture: any
+Depends:  ${misc:Depends},
+          puppet-agent,
+Description: install ruby gem mini_portile2 into puppet-agent
+ Take mini_portile2 and install it into the
+ virtual ruby environment of the puppet-agent (in /opt)
+ .
+ This package is a requirement to install gpgme into the
+ puppet-agent environment
+
+Package: puppet-enhance-eyaml-gpg
+Architecture: any
+Depends:  ${misc:Depends},
+          puppet-agent,
+          puppet-enhance-miniportile2,
+Description: install ruby gems for eyaml gpg support into puppet-agent
+ Take several gems and install them into the
+ virtual ruby environment of the puppet-agent (in /opt)
+ from puppetlabs

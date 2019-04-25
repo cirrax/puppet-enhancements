@@ -1,0 +1,4 @@
+
+dir-in-usr-local usr/local/bin/
+file-in-usr-local usr/local/bin/*
+file-in-unusual-dir usr/local/bin/*
