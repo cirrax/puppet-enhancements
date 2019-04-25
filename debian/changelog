@@ -1,3 +1,9 @@
+puppet-enhancements (0.0.2) unstable; urgency=medium
+
+  * new gem versions hiera-eyaml-gpg-0.7.3 
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Thu, 25 Apr 2019 19:07:39 +0200
+
 puppet-enhancements (0.0.1) unstable; urgency=medium
 
   * Initial release.
