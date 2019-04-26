@@ -1,0 +1,3 @@
+#DEBHELPER#
+
+/opt/puppetlabs/puppet/bin/gem uninstall gpgme

@@ -1,3 +1,9 @@
+puppet-enhancements (0.0.4) stretch; urgency=medium
+
+  * separate gems, use-system-libraries for gpgme 
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Fri, 26 Apr 2019 12:43:57 +0200
+
 puppet-enhancements (0.0.3) stretch; urgency=medium
 
   * Restrict operations to the LOCAL domain 

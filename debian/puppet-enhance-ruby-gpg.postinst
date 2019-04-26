@@ -1,0 +1,3 @@
+#DEBHELPER#
+
+/opt/puppetlabs/puppet/bin/gem install -l /usr/src/rubygems-ruby_gpg/*.gem

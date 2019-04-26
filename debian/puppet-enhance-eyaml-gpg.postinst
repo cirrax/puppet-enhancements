@@ -1,3 +1,0 @@
-#DEBHELPER#
-
-/opt/puppetlabs/puppet/bin/gem install -l /usr/src/rubygems-eyaml-gpg/*.gem
