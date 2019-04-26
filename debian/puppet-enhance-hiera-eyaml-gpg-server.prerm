@@ -1,0 +1,3 @@
+#DEBHELPER#
+
+/opt/puppetlabs/server/bin/puppetserver gem uninstall hiera-eyaml-gpg

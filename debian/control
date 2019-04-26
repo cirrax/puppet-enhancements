@@ -26,9 +26,20 @@ Description: install ruby gem mini_portile2 into puppet-agent
  This package is a requirement to install gpgme into the
  puppet-agent environment
 
-Package: puppet-enhance-hiera-eyaml-gpg
+Package: puppet-enhance-hiera-eyaml-gpg-source
 Architecture: any
 Depends:  ${misc:Depends},
+Description: GPG encryption backend for the hiera-eyaml module (source)
+ installs the actual gem into /usr/src/rubygems-hiera-eyaml-gpg
+ used to install for puppetserver and puppet-agent.
+ .
+ installs the gem into /usr/src/rubygems-hiera-eyaml-gpg
+
+Package: puppet-enhance-hiera-eyaml-gpg-agent
+Architecture: any
+Depends:  ${misc:Depends},
+          puppet-enhance-hiera-eyaml-gpg-source,
+          puppet-enhance-gpgme,
           puppet-agent,
 Description: GPG encryption backend for the hiera-eyaml module (for puppet-agent)
  installs the GPG encryption backend into puppet-agent virtual
@@ -37,16 +48,29 @@ Description: GPG encryption backend for the hiera-eyaml module (for puppet-agent
  installs into virtual ruby environment of the puppet-agent (in /opt)
  from puppetlabs
 
+Package: puppet-enhance-hiera-eyaml-gpg-server
+Architecture: any
+Depends:  ${misc:Depends},
+          puppet-enhance-hiera-eyaml-gpg-source,
+          puppetserver,
+          puppet-enhance-ruby-gpg,
+Description: GPG encryption backend for the hiera-eyaml module (for puppetserver)
+ installs the GPG encryption backend into puppetserver virtual
+ environment.
+ .
+ installs into virtual ruby environment of the puppetserver (in /opt)
+ from puppetlabs
+
 Package: puppet-enhance-ruby-gpg
 Architecture: any
 Depends:  ${misc:Depends},
-          puppet-agent,
-Description: Ruby wrapper for the gpg binary (for puppet-agent)
+          puppetserver,
+Description: Ruby wrapper for the gpg binary (puppetserver)
  Ruby wrapper for the gpg binary.
  You probably want to be using the ruby-gpgme gem instead which
  is more powerful but has more dependencies.
  .
- installs into virtual ruby environment of the puppet-agent (in /opt)
+ installs into virtual ruby environment of the puppetserver (in /opt)
  from puppetlabs
 
 Package: puppet-enhance-gpgme

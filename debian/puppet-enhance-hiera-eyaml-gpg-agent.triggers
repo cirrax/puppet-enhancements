@@ -1,0 +1,3 @@
+
+# trigger postinst if the gem changes
+interest /usr/src/rubygems-hiera-eyaml-gpg

@@ -1,3 +1,9 @@
+puppet-enhancements (0.0.6) stretch; urgency=medium
+
+  * add packages for puppetserver
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Fri, 26 Apr 2019 15:53:00 +0200
+
 puppet-enhancements (0.0.5) stretch; urgency=medium
 
   * add dependencies to build gpgme 

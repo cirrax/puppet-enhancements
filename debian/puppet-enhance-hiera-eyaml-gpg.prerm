@@ -1,5 +1,0 @@
-#DEBHELPER#
-
-/opt/puppetlabs/puppet/bin/gem uninstall gpgme
-/opt/puppetlabs/puppet/bin/gem uninstall ruby_gpg
-/opt/puppetlabs/puppet/bin/gem uninstall hiera-eyaml-gpg
