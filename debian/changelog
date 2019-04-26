@@ -1,3 +1,9 @@
+puppet-enhancements (0.0.3) stretch; urgency=medium
+
+  * Restrict operations to the LOCAL domain 
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Fri, 26 Apr 2019 09:51:11 +0200
+
 puppet-enhancements (0.0.2) unstable; urgency=medium
 
   * new gem versions hiera-eyaml-gpg-0.7.3 

@@ -1,3 +1,3 @@
 #DEBHELPER#
 
-/opt/puppetlabs/puppet/bin/gem install /usr/src/rubygems-mini_portile2/*.gem
+/opt/puppetlabs/puppet/bin/gem install -l /usr/src/rubygems-mini_portile2/*.gem
