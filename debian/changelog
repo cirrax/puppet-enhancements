@@ -1,3 +1,9 @@
+puppet-enhancements (0.0.5) stretch; urgency=medium
+
+  * add dependencies to build gpgme 
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Fri, 26 Apr 2019 13:22:12 +0200
+
 puppet-enhancements (0.0.4) stretch; urgency=medium
 
   * separate gems, use-system-libraries for gpgme 

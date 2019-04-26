@@ -54,6 +54,8 @@ Architecture: any
 Depends:  ${misc:Depends},
           puppet-agent,
           puppet-enhance-miniportile2,
+          gcc,
+          make,
           libgpgme-dev,
 Description: ruby interface to GnuPG Made Easy (for puppet-agent)
  GnuPG Made Easy (GPGME) is a library designed to make access to GnuPG 
