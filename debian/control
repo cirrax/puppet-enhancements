@@ -1,10 +1,10 @@
 Source: puppet-enhancements
 Section: misc
-Priority: extra
+Priority: optional
 Maintainer: Benedikt Trefzer <benedikt.trefzer@cirrax.com>
-Build-Depends: debhelper (>= 9),
+Build-Depends: debhelper (>= 10),
                ruby,
-Standards-Version: 3.9.8
+Standards-Version: 4.3.0
 
 Package: puppet-enhance-links
 Architecture: any
