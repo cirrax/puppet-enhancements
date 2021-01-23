@@ -1,3 +1,10 @@
+puppet-enhancements (0.0.7) buster; urgency=medium
+
+  * lintians fixed
+  * packages upgraded
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Sat, 23 Jan 2021 14:31:25 +0100
+
 puppet-enhancements (0.0.6) stretch; urgency=medium
 
   * add packages for puppetserver
