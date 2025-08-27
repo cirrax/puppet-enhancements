@@ -1,3 +1,11 @@
+puppet-enhancements (0.1.0) trixie; urgency=medium
+
+  * fix lintians
+  * upgrade compat
+  * depend on openvox or puppet
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Wed, 27 Aug 2025 21:06:52 +0200
+
 puppet-enhancements (0.0.9) trixie; urgency=medium
 
   * upgrade from gpgme-2.0.20 to gpgme-2.0.25
