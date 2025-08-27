@@ -1,20 +1,23 @@
 #!/bin/bash
 
-if [ ! -d hiera-eyaml-gpg ] ; then
-  mkdir hiera-eyaml-gpg
-fi
-(cd hiera-eyaml-gpg; gem fetch hiera-eyaml-gpg)
-if [ ! -d gpgme ] ; then
-  mkdir gpgme
-fi
-(cd gpgme; gem fetch gpgme)
-if [ ! -d ruby_gpg ] ; then
-  mkdir ruby_gpg
-fi
-(cd ruby_gpg; gem fetch ruby_gpg)
-if [ ! -d mini_portile2 ] ; then
-  mkdir mini_portile2
-fi
-(cd mini_portile2; gem fetch mini_portile2)
+GEMS='hiera-eyaml-gpg gpgme ruby_gpg mini_portile2'
 
+for G in $GEMS; do
+  if [ ! -d $G ] ; then
+    mkdir $G
+  fi
+  (cd $G; gem fetch $G)
+done
+
+echo
+
+for G in $GEMS; do
+  num=$(cd $G; ls|wc -l)
+  if [ $num -ne 1 ]; then
+    t=$(cd $G; ls |tr '\n' ' '|sed -e 's/\.gem//g' -e 's/ / to /' -e 's/^/ upgrade from /')
+    echo $t
+  fi
+done
+
+echo
 echo If new versions have been downloaded, you should delete the old version.
