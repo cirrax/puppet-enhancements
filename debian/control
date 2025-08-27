@@ -9,7 +9,7 @@ Standards-Version: 4.3.0
 Package: puppet-enhance-links
 Architecture: any
 Depends:  ${misc:Depends},
-          puppet-agent,
+          puppet-agent|openvox-agent,
 Description: create several links to use puppetlabs puppet-agent
  create links to use the virtual environment installed
  by puppetlabs puppet-agent.
@@ -18,7 +18,7 @@ Description: create several links to use puppetlabs puppet-agent
 Package: puppet-enhance-miniportile2
 Architecture: any
 Depends:  ${misc:Depends},
-          puppet-agent,
+          puppet-agent|openvox-agent,
 Description: install ruby gem mini_portile2 into puppet-agent
  Take mini_portile2 and install it into the
  virtual ruby environment of the puppet-agent (in /opt)
@@ -40,7 +40,7 @@ Architecture: any
 Depends:  ${misc:Depends},
           puppet-enhance-hiera-eyaml-gpg-source,
           puppet-enhance-gpgme,
-          puppet-agent,
+          puppet-agent|openvox-agent,
 Description: GPG encryption backend for the hiera-eyaml module (for puppet-agent)
  installs the GPG encryption backend into puppet-agent virtual
  environment.
@@ -52,7 +52,7 @@ Package: puppet-enhance-hiera-eyaml-gpg-server
 Architecture: any
 Depends:  ${misc:Depends},
           puppet-enhance-hiera-eyaml-gpg-source,
-          puppetserver,
+          puppetserver|openvox-server,
           puppet-enhance-ruby-gpg,
 Description: GPG encryption backend for the hiera-eyaml module (for puppetserver)
  installs the GPG encryption backend into puppetserver virtual
@@ -64,7 +64,7 @@ Description: GPG encryption backend for the hiera-eyaml module (for puppetserver
 Package: puppet-enhance-ruby-gpg
 Architecture: any
 Depends:  ${misc:Depends},
-          puppetserver,
+          puppetserver|openvox-server,
 Description: Ruby wrapper for the gpg binary (puppetserver)
  Ruby wrapper for the gpg binary.
  You probably want to be using the ruby-gpgme gem instead which
@@ -76,7 +76,7 @@ Description: Ruby wrapper for the gpg binary (puppetserver)
 Package: puppet-enhance-gpgme
 Architecture: any
 Depends:  ${misc:Depends},
-          puppet-agent,
+          puppet-agent|openvox-agent,
           puppet-enhance-miniportile2,
           gcc,
           make,
