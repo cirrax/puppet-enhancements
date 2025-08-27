@@ -1,3 +1,10 @@
+puppet-enhancements (0.0.9) trixie; urgency=medium
+
+  * upgrade from gpgme-2.0.20 to gpgme-2.0.25
+  * upgrade from mini_portile2-2.8.0 to mini_portile2-2.8.9
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Wed, 27 Aug 2025 18:10:18 +0200
+
 puppet-enhancements (0.0.8) bullseye; urgency=medium
 
   * new version for bullseye
