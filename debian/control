@@ -2,7 +2,7 @@ Source: puppet-enhancements
 Section: misc
 Priority: optional
 Maintainer: Benedikt Trefzer <benedikt.trefzer@cirrax.com>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 12),
                ruby,
 Standards-Version: 4.3.0
 
