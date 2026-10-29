@@ -1,3 +1,9 @@
+puppet-enhancements (0.2.0) trixie; urgency=medium
+
+  * new version of gpgme
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Thu, 29 Oct 2026 14:25:12 +0100
+
 puppet-enhancements (0.1.0) trixie; urgency=medium
 
   * fix lintians
